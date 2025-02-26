@@ -72,9 +72,11 @@ export default function LandingPage() {
       
     </div>
     {/* Brand Logos */}
-    
-    <div className="w-full xs:w-[45rem] p-0 mb-8  xs:overflow-hidden">
-        <Image src="/brands.png" alt="Brand Logos" width={1300} height={20} />
+
+<div className='xs:overflow-hidden '>
+    <div className="w-full  p-0 mb-8  xs:size-[40rem] xs:text-center ">
+        <Image src="/brands.png" alt="Brand Logos" width={1300} height={20} className='xs:object-center'/>
+      </div>
       </div>
     </>
   );
