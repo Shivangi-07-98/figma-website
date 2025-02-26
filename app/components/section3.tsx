@@ -19,7 +19,7 @@ export default function Section3() {
 
       
     </section>
-    <div className="mt-12 mx-auto flex max-[430px]:flex-col max-[430px]:mx-2 max-[430px]:px-0 justify-center gap-10">
+    <div className="mt-12 mx-auto flex max-[430px]:flex-col max-[430px]:mx-2 max-[430px]:px-0 justify-center gap-10 min-[431px]:max-[810px]:flex-col min-[431px]:max-[810px]:items-center">
         {/* Card 1 */}
         <div className="bg-white shadow-xl rounded-xl max-[430px]:rounded-3xl py-6 px-8 text-center relative flex flex-col items-center border border-gray-200">
           <Image src="/cube-helix.png" alt="Helix" width={250} height={250} className="mb-4" />

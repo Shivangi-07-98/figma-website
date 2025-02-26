@@ -49,14 +49,14 @@ export default function Section2() {
       <div className="relative  mx-auto  rounded-xl max-[430px]:mt-6">
         <Image src="/product-image.png" alt="Product Screenshot" width={900} height={600} className="w-full" />
         {/* Left Decorative Image */}
-        <Image src="/torus.png" alt="Torus" width={180} height={180} className="absolute left-0 top-[29rem] max-[430px]:hidden" />
+        <Image src="/torus.png" alt="Torus" width={180} height={180} className="absolute left-0 top-[29rem] max-[430px]:hidden min-[431px]:max-[810px]:top-[10rem] " />
         {/* Right Decorative Image */}
-        <Image src="/pyramid.png" alt="Pyramid" width={180} height={180} className="absolute right-0 top-[10rem] max-[430px]:hidden" />
+        <Image src="/pyramid.png" alt="Pyramid" width={180} height={180} className="absolute right-0 top-[10rem] max-[430px]:hidden min-[431px]:max-[810px]:-top-[5rem]" />
       </div>
 
 
       {/* Features Section */}
-      <div className="m-10 grid grid-cols-4 gap-8 max-[430px]:flex max-[430px]:flex-col max-[430px]:items-center max-[430px]:gap-y-11">
+      <div className="m-10 min-[431px]:max-[810px]:mx-32 min-[431px]:max-[810px]:gap-y-16 grid grid-cols-4 min-[431px]:max-[810px]:grid-cols-2 gap-8 max-[430px]:flex max-[430px]:flex-col max-[430px]:items-center max-[430px]:gap-y-11">
           {featureCards.map((card, index) => (
             <div key={index} className="flex flex-col items-start justify-start w-full max-[430px]:w-[75%] max-[430px]:mx-auto">
               <Image src={card.image} alt={card.title} width={20} height={20} />

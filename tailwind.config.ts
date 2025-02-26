@@ -15,7 +15,7 @@ export default {
       screens: {
         'xs': '430px',
         'sm': '500px',
-        'md': '800px',
+        'md': '810px',
         lg: '1024px', // Small laptops and large tablets
         xl: '1280px', // Standard desktops
         '2xl': '1440px', // Larger desktops (common in offices)

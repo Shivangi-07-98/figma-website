@@ -23,7 +23,7 @@ export default function Section4() {
     </section>
 
     <div >
-      <section className="max-[430px]:pt-8 pt-8 pb-20  px-6 max-[430px]:px-2 max-[430px]:mx-0  flex justify-center items-end gap-6 flex-wrap">
+      <section className="max-[430px]:pt-8 pt-8 pb-20  px-6 max-[430px]:px-2 max-[430px]:mx-0  flex justify-center items-end gap-6 flex-wrap min-[431px]:max-[810px]:flex-col min-[431px]:max-[810px]:items-center">
       {/* Free Plan */}
       <div className="bg-white shadow-md rounded-xl max-[430px]:rounded-3xl p-6 w-70 max-[430px]:w-80 max-[430px]:py-10  border border-gray-200">
         <h3 className="text-[#6F6C90] font-semibold text-left">Free</h3>

@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
                   key={index}
                   className={`relative px-5 py-6 bg-white rounded-xl shadow-lg border border-gray-200 
                     ${testimonial.fade ? "before:absolute before:inset-0 before:bg-gradient-to-b before:from-white before:to-transparent before:rounded-xl" : ""} 
-                    ${colIndex === 1 && index === 0 ? "h-[130px]" : colIndex === 1 && index === 1 ? "h-[200px]" : "h-[140px]"}`}
+                    ${colIndex === 1 && index === 0 ? "h-[130px] min-[431px]:max-[810px]:h-[160px]" : colIndex === 1 && index === 1 ? "h-[200px] min-[431px]:max-[810px]:h-[230px]" : "h-[140px] min-[431px]:max-[810px]:h-[180px]"}`}
                 >
                   <p className="text-gray-800 text-sm">{testimonial.text}</p>
                   <div className="flex items-center mt-4">

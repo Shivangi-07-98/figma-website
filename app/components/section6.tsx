@@ -3,15 +3,15 @@ import { ArrowRight } from "lucide-react";
 
 const SignupSection = () => {
   return (
-    <section className="relative w-full py-16 max-[430px]:py-12 pb-28 bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] flex flex-col items-center justify-center ">
+    <section className="relative w-full py-16 max-[430px]:py-12 pb-28 bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] flex flex-col items-center justify-center min-[431px]:max-[810px]:overflow-hidden ">
       {/* Left Star Image */}
-      <div className="max-[430px]:hidden">
+      <div className="max-[430px]:hidden ">
       <Image
         src="/star.png"
         alt="Star"
         width={300}
         height={300}
-        className="absolute left-0 top-[30%] transform -translate-y-1/2 "
+        className="absolute left-0 top-[30%] transform -translate-y-1/2 min-[431px]:max-[810px]:-left-[10rem] "
       />
 
       {/* Right Helix Image */}
@@ -20,7 +20,7 @@ const SignupSection = () => {
         alt="Helix"
         width={300}
         height={300}
-        className="absolute right-0 top-[17%] transform -translate-x-4 "
+        className="absolute right-0 top-[17%] transform -translate-x-4 min-[431px]:max-[810px]:-right-[8rem]"
       />
       </div>
 
