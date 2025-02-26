@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'xs': '350px',
+        'xs': '430px',
         'sm': '500px',
         'md': '800px',
         lg: '1024px', // Small laptops and large tablets

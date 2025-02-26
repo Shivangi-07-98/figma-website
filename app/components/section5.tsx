@@ -31,7 +31,8 @@ const rightTestimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <div className="relative">
+    <>
+    <div className="relative max-[430px]:hidden">
       {/* Full gradient overlay at the top */}
       <div className="absolute top-[10rem] left-0 w-full h-[150px] pointer-events-none z-10"
         style={{
@@ -45,7 +46,7 @@ export default function TestimonialsSection() {
           <h2 className="text-5xl font-bold">What our users say</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 py-14 mb-14 p-5 xs:flex xs:flex-col">
+        <div className="grid grid-cols-3 gap-4 py-14 mb-14 p-5 max-[430px]flex max-[430px]flex-col">
           
           {[testimonials, middleTestimonials, rightTestimonials].map((column, colIndex) => (
             <div key={colIndex} className={`flex flex-col ${colIndex === 1 ? 'gap-6' : colIndex === 0 ? 'gap-6' : 'gap-0'}`}>
@@ -84,5 +85,60 @@ export default function TestimonialsSection() {
 
       </section>
     </div>
+
+    <div className="relative min-[431px]:hidden">
+      {/* Full gradient overlay at the top */}
+      <div className="absolute top-[10rem] left-0 w-full h-[150px] pointer-events-none z-10"
+        style={{
+          background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%)"
+        }}
+      />
+
+      <section className="py-6 px-16 relative">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[#000000] text-sm border px-3 py-1 inline-block rounded-full mb-4">Testimonials</p>
+          <h2 className="text-5xl font-bold max-[430px]:text-[32px] max-[430px]:mx-auto max-[430px]:max-w-[12rem]">What our users say</h2>
+        </div>
+
+        <div className="grid grid-cols-3 gap-4 py-14 mb-14 p-2 max-[430px]:flex max-[430px]:flex-col">
+          
+          {[testimonials].map((column, colIndex) => (
+            <div key={colIndex} className={`flex flex-col gap-6 w-full`}>
+              {column.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className={`relative px-5 py-6 bg-white rounded-xl shadow-lg border border-gray-200 
+                    ${testimonial.fade ? "before:absolute before:inset-0 before:bg-gradient-to-b before:from-white before:to-transparent before:rounded-xl" : ""} 
+                    `}
+                >
+                  <p className="text-gray-800 text-sm">{testimonial.text}</p>
+                  <div className="flex items-center mt-4">
+                    {/* Profile Image */}
+                    
+                    <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        width={32}
+                        height={32}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div className="ml-3">
+                      <p className="font-semibold text-xs">{testimonial.name}</p>
+                      <p className="text-xs text-gray-500">{testimonial.username}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+          
+        </div>
+
+      </section>
+    </div>
+    </>
   );
 }

@@ -3,9 +3,9 @@ import { ArrowRight } from "lucide-react";
 
 const SignupSection = () => {
   return (
-    <section className="relative w-full py-16 xs:py-12 pb-28 bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] flex flex-col items-center justify-center md:overflow-hidden">
+    <section className="relative w-full py-16 max-[430px]:py-12 pb-28 bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] flex flex-col items-center justify-center ">
       {/* Left Star Image */}
-      <div className="xs:hidden">
+      <div className="max-[430px]:hidden">
       <Image
         src="/star.png"
         alt="Star"
@@ -20,16 +20,16 @@ const SignupSection = () => {
         alt="Helix"
         width={300}
         height={300}
-        className="absolute right-0 top-[17%] transform -translate-x-4 md:-right-[10rem] md:overflow-hidden"
+        className="absolute right-0 top-[17%] transform -translate-x-4 "
       />
       </div>
 
       {/* Content */}
       <div className="text-center max-w-2xl px-4">
-        <h2 className="text-5xl xs:text-4xl font-bold text-[#001354]">
+        <h2 className="text-5xl max-[430px]:text-4xl max-[430px]:mx-auto max-[430px]:max-w-[16rem] font-bold text-[#001354]">
           Sign up for <span className="text-[#001354]">free</span> today
         </h2>
-        <p className="text-[#010D3E] mx-auto text-base text-center max-w-[26rem] mt-3">
+        <p className="text-[#010D3E] mx-auto max-[430px]:mx-auto max-[430px]:max-w-[18rem] text-base text-center max-w-[26rem] mt-3">
           Celebrate the joy of accomplishment with an app designed to track your
           progress and motivate your efforts.
         </p>
