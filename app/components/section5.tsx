@@ -45,8 +45,7 @@ export default function TestimonialsSection() {
           <h2 className="text-5xl font-bold">What our users say</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 py-14 mb-14 p-5 xs:flex xs:flex-col">
-          
+        <div className="grid grid-cols-3 gap-4 py-14 mb-14 p-5">
           {[testimonials, middleTestimonials, rightTestimonials].map((column, colIndex) => (
             <div key={colIndex} className={`flex flex-col ${colIndex === 1 ? 'gap-6' : colIndex === 0 ? 'gap-6' : 'gap-0'}`}>
               {column.map((testimonial, index) => (
@@ -79,9 +78,7 @@ export default function TestimonialsSection() {
               ))}
             </div>
           ))}
-          
         </div>
-
       </section>
     </div>
   );
