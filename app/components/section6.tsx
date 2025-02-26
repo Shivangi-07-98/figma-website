@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import './styles/section6.scss'
+
 
 const SignupSection = () => {
   return (
-    <section className="relative w-full py-16 pb-28 bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] flex flex-col items-center justify-center">
+    <section className="section6 relative w-full py-16 pb-28 bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] flex flex-col items-center justify-center">
       {/* Left Star Image */}
       <Image
         src="/star.png"
         alt="Star"
         width={300}
         height={300}
-        className="absolute left-0 top-[30%] transform -translate-y-1/2 "
+        className="absolute left-0 top-[30%] transform -translate-y-1/2 images"
       />
 
       {/* Right Helix Image */}
@@ -19,7 +21,7 @@ const SignupSection = () => {
         alt="Helix"
         width={300}
         height={300}
-        className="absolute right-0 top-[17%] transform -translate-x-4"
+        className="absolute right-0 top-[17%] transform -translate-x-4 images"
       />
 
       {/* Content */}

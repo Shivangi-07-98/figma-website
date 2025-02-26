@@ -3,10 +3,11 @@
 import Image from 'next/image';
 import { Check } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
+import './styles/section2.scss'
 
 export default function Section2() {
   return (
-    <section className="text-center py-16 ">
+    <section className="section2 text-center py-16 ">
       <div className="max-w-3xl mx-auto">
         <p className="text-[#000000] text-sm border px-3 py-1 inline-block rounded-full mb-4">Boost your productivity</p>
         <h2 className="text-4xl font-bold">
@@ -23,15 +24,15 @@ export default function Section2() {
       <div className="pb-16 relative bg-gradient-to-t from-[#D2DCFF] to-[#FFFFFF] ">
       {/* Main Product Image */}
       <div className="relative  mx-auto  rounded-xl ">
-        <Image src="/product-image.png" alt="Product Screenshot" width={900} height={600} className="w-full" />
+        <Image src="/product-image.png" alt="Product Screenshot" width={900} height={600} className="w-full image1" />
         {/* Left Decorative Image */}
-        <Image src="/torus.png" alt="Torus" width={180} height={180} className="absolute left-0 top-[29rem]" />
+        <Image src="/torus.png" alt="Torus" width={180} height={180} className="absolute left-0 top-[29rem] image2" />
         {/* Right Decorative Image */}
-        <Image src="/pyramid.png" alt="Pyramid" width={180} height={180} className="absolute right-0 top-[10rem]" />
+        <Image src="/pyramid.png" alt="Pyramid" width={180} height={180} className="absolute right-0 top-[10rem] image3" />
       </div>
 
       {/* Features Section */}
-      <div className="my-10 grid grid-cols-4  gap-8  mx-10">
+      <div className="feature my-10 grid grid-cols-4  gap-8  mx-10">
         <FeatureCard 
           image="/leaf.png"
           title="Integration ecosystem"

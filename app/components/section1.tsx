@@ -2,20 +2,21 @@
 
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react'; 
+import './styles/section1.scss'
 
 export default function LandingPage() {
   return (
     <>
-    <div className="relative min-h-screen bg-gradient-to-tr from-[#183EC2] via-[#EAEEFE] to-[#EAEEFE]
+    <div className="section1 relative min-h-screen bg-gradient-to-tr from-[#183EC2] via-[#EAEEFE] to-[#EAEEFE]
 
 ">
       {/* Top Bar */}
       <div className="w-full bg-black text-gray-500 text-center text-sm py-2 ">
-        This page is included in a free SaaS Website Kit. <span className="text-gray-200 inline-flex items-center gap-1">View the complete Kit <ArrowRight size={14} /></span>
+        <span className='text1'>This page is included in a free SaaS Website Kit.</span> <span className="text-gray-200 inline-flex items-center gap-1">View the complete Kit <ArrowRight size={14} /></span>
       </div>
       
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-8 py-4">
+      <nav className="navbar flex justify-between items-center px-8 py-4">
         <Image src="/framer.png" alt="Made by Framer" width={180} height={100} />
         <div className="flex items-center font-semibold gap-6 text-gray-500 text-base">
           <a href="#" className="hover:underline">About</a>
@@ -31,9 +32,9 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative flex items-center px-12 py-20 pb-32">
+      <section className="hero relative flex items-center px-12 py-20 pb-32">
         {/* Left Side */}
-        <div className="w-1/2">
+        <div className="w-1/2 left">
           <p className="border-[1.3px]  border-gray-400 text-black px-3 py-1 rounded-lg inline-block text-base font-medium mb-4">Version 2.0 is here</p>
           <h1 className="text-[90px] font-bold text-black leading-tight">Pathway to <span className='text-[#001354]'>productivity</span></h1>
           <p className="text-[#010D3E] mt-4 text-xl w-[30rem]">Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.</p>
@@ -51,9 +52,9 @@ export default function LandingPage() {
 
         {/* Right Side */}
         <div className="w-1/2 ">
-          <Image src="/cylinder.png" alt="3D Design 1" width={200} height={200} className="absolute top-0 right-[34rem]" />
-          <Image src="/visual.png" alt="3D Design 2" width={600} height={600} className="absolute top-0 right-0" />
-          <Image src="/half-torus.png" alt="3D Design 3" width={210} height={210} className="absolute -bottom-[6rem] right-5" />
+          <Image src="/cylinder.png" alt="3D Design 1" width={200} height={200} className="absolute top-0 right-[34rem] image1" />
+          <Image src="/visual.png" alt="3D Design 2" width={600} height={600} className="absolute top-0 right-0 image2" />
+          <Image src="/half-torus.png" alt="3D Design 3" width={210} height={210} className="absolute -bottom-[6rem] right-5 image3" />
         </div>
       </section>
       

@@ -1,16 +1,17 @@
 'use client';
 
 import Image from 'next/image';
+import './styles/section7.scss'
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-8 px-4">
-      <div className=" flex justify-between">
+      <div className="section7 flex justify-between">
         {/* Left Section */}
-        <div className="flex flex-col justify-between">
+        <div className="left flex flex-col justify-between">
           <div>
           <Image src="/logo.png" alt="Logo" width={50} height={50} />
-          <p className="text-[#BCBCBC] text-sm max-w-[40%] mt-4">
+          <p className="text text-[#BCBCBC] text-sm max-w-[40%] mt-4">
             Effortlessly turn your ideas into a fully functional, responsive, no-code SaaS website.
           </p>
           </div>
@@ -23,7 +24,7 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="grid grid-cols-4 gap-12 justify-end mr-0 pr-0">
+        <div className="right grid grid-cols-4 gap-12 justify-end mr-0 pr-0">
           <div>
             <h3 className="text-[#FFFFFF] text-sm font-semibold">Product</h3>
             <ul className="mt-2 space-y-2 text-[#7B7B7B] text-sm">

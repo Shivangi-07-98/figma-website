@@ -1,0 +1,29 @@
+
+@media (max-width: 430px) {
+  .section7 {
+    flex-direction: column;
+    gap: 4rem;
+    .text{
+      max-width: 90%;
+
+    }
+  }
+  .left{
+    gap: 2rem;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+
+// .section7 {
+//   // display: flex;
+
+//   @media (max-width: 450px) {
+//     flex-direction: column;
+//   }
+// }
+

@@ -1,10 +1,12 @@
 'use client';
 
 import Image from 'next/image';
+import './styles/section3.scss'
+
 
 export default function Section3() {
   return (
-    <section className="text-center py-16 px-6 md:px-16 lg:px-24">
+    <section className="section3 text-center py-16 px-6 md:px-16 lg:px-24">
       <div className="max-w-3xl mx-auto">
         <p className="text-[#000000] text-sm border px-3 py-1 inline-block rounded-full mb-4">Everything you need</p>
         <h2 className="text-4xl font-bold">
@@ -16,7 +18,7 @@ export default function Section3() {
         </p>
       </div>
 
-      <div className="mt-12 mx-auto flex justify-center gap-10">
+      <div className="cards mt-12 mx-auto flex justify-center gap-10">
         {/* Card 1 */}
         <div className="bg-white shadow-xl rounded-xl py-6 px-8 text-center relative flex flex-col items-center">
           <Image src="/cube-helix.png" alt="Helix" width={250} height={250} className="mb-4" />

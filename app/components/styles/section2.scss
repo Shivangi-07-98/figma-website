@@ -1,0 +1,17 @@
+
+@media (max-width: 430px) {
+  .section2{
+    .image2, .image3{
+      display: none;
+    }
+    
+    .feature{
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+  
+  
+}
+
