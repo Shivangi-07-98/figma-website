@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react'; 
 
 export default function LandingPage() {
   return (
